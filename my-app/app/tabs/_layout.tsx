@@ -8,8 +8,10 @@ export default function Layout() {
     <Tabs
       screenOptions={{
         tabBarStyle: { height: 50 },
-        tabBarInactiveTintColor: "#000",
+        tabBarInactiveTintColor: "#d1d1d1",
         headerShown: false,
+        tabBarBackground: () => <div style={{ flex: 1, backgroundColor: "black" }} />,
+        tabBarActiveTintColor: "#1DB954",
       }}
     >
       <Tabs.Screen
@@ -30,7 +32,7 @@ export default function Layout() {
         name="premium"
         options={{
           title: "Premium",
-          tabBarIcon: ({ color }) => <FontAwesome5 name="spotify" color={color} size={28} />,
+          tabBarIcon: ({ color }) => <FontAwesome5 name="spotify" color={color} size={30} />,
         }}
       />
     </Tabs>

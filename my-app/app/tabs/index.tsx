@@ -66,7 +66,131 @@ export default function CategoryChips() {
         </View>
       </View>
       <View>
-        <Text style={{ color: "#fff", fontSize: 18, marginTop: 20, fontWeight: "700" }}>Made For Yehor</Text>
+        <Text style={{ color: "#fff", fontSize: 24, marginVertical: 20, fontWeight: "700" }}>Made For Yehor</Text>
+      </View>
+      {/* Example playlist items */}
+      <View>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          {/* First card */}
+          <View style={{ width: 200, marginRight: 15 }}>
+            <Image
+              source={{
+                uri: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+              }}
+              style={{ width: 200, height: 200, borderRadius: 4, overflow: "hidden" }}
+            />
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 20,
+                position: "absolute",
+                top: 140,
+                left: 10,
+                fontStyle: "italic",
+                fontWeight: "bold",
+                width: 120,
+              }}
+            >
+              Discover Weekly
+            </Text>
+            <Text style={{ color: "#fff", fontSize: 16, marginTop: 10 }}>Your weekly mixtape of fresh music.</Text>
+          </View>
+          {/* Second card */}
+          <View style={{ width: 200, marginRight: 15 }}>
+            <Image
+              source={{
+                uri: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80",
+              }}
+              style={{ width: 200, height: 200, borderRadius: 4, overflow: "hidden" }}
+            />
+            <Text style={{ color: "#fff", fontSize: 16, marginTop: 10 }}>Soft tunes for your mood.</Text>
+          </View>
+          {/* Third card */}
+          <View style={{ width: 200, marginRight: 15 }}>
+            <Image
+              source={{
+                uri: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
+              }}
+              style={{ width: 200, height: 200, borderRadius: 4, overflow: "hidden" }}
+            />
+            <Text style={{ color: "#fff", fontSize: 16, marginTop: 10 }}>Beats to boost your energy.</Text>
+          </View>
+        </ScrollView>
+      </View>
+      <View>
+        <Text style={{ color: "#fff", fontSize: 24, marginVertical: 20, fontWeight: "700" }}>
+          Find you next favorite song
+        </Text>
+      </View>
+      {/* Similar to section */}
+      <View>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          {/* First card */}
+          <View style={{ width: 150, height: "auto", marginRight: 15 }}>
+            <Image
+              source={{
+                uri: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80",
+              }}
+              style={{ width: 150, height: 250, borderRadius: 8, overflow: "hidden" }}
+            />
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 16,
+                position: "absolute",
+                top: 170,
+                left: 10,
+                fontStyle: "italic",
+                width: 120,
+              }}
+            >
+              Similar to <Text style={{ color: "#e6e6e6", fontWeight: "bold" }}>Animal I have become</Text>
+            </Text>
+          </View>
+          {/* Second card */}
+          <View style={{ width: 150, height: "auto", marginRight: 15 }}>
+            <Image
+              source={{
+                uri: "https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg",
+              }}
+              style={{ width: 150, height: 250, borderRadius: 8, overflow: "hidden" }}
+            />
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 16,
+                position: "absolute",
+                top: 170,
+                left: 10,
+                fontStyle: "italic",
+              }}
+            >
+              Similar to <Text style={{ color: "#e6e6e6", fontWeight: "bold" }}>Moth To A Flame(with the Weekend)</Text>
+            </Text>
+          </View>
+          {/* Third card */}
+          <View style={{ width: 150, height: "auto", marginRight: 15 }}>
+            <Image
+              source={{
+                uri: "https://images.pexels.com/photos/1010519/pexels-photo-1010519.jpeg",
+              }}
+              style={{ width: 150, height: 250, borderRadius: 8, overflow: "hidden" }}
+            />
+            <Text
+              style={{
+                color: "#fff",
+                fontSize: 16,
+                position: "absolute",
+                top: 190,
+                left: 10,
+                fontStyle: "italic",
+                width: 120,
+              }}
+            >
+              Similar to <Text style={{ color: "#e6e6e6", fontWeight: "bold" }}>Monster</Text>
+            </Text>
+          </View>
+        </ScrollView>
       </View>
     </SafeAreaView>
   );
