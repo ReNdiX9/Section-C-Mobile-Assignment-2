@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function PremiumScreen() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#000" }}>
-      <View contentContainerStyle={{ flexGrow: 1 }}>
+      <View style={{ flexGrow: 1 }}>
         {/* Top image section */}
         <View style={styles.topImageContainer}>
           <Image
